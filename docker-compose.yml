@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  sardashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sar-biome-dashboard
+    ports:
+      - "8080:8080"  # API FastAPI
+      - "8501:8501"  # Streamlit Dashboard
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TZ=America/Sao_Paulo
+    volumes:
+      - ./uploaded_data:/app/uploaded_data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - sar-network
+
+networks:
+  sar-network:
+    driver: bridge

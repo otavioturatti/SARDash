@@ -1,0 +1,67 @@
+{
+  "last_update": "2024-10-04T15:30:00",
+  "region": "Amazon Rainforest",
+  "analysis_period": "Janeiro-Outubro 2024",
+  "metricas": {
+    "ndvi_medio": 0.82,
+    "area_vegetacao_km2": 42500.8,
+    "mudanca_vegetacao_percent": -3.7,
+    "agua_extent_km2": 8200.5,
+    "total_alerts": 187,
+    "sar_backscatter_db": -14.2,
+    "cobertura_florestal_percent": 76.3,
+    "desmatamento_km2": 892.4
+  },
+  "dados_detalhados": {
+    "Tendências Mensais": [
+      {
+        "mes": "Janeiro",
+        "ndvi": 0.85,
+        "agua_km2": 8500,
+        "alerts": 12
+      },
+      {
+        "mes": "Fevereiro",
+        "ndvi": 0.84,
+        "agua_km2": 8300,
+        "alerts": 15
+      },
+      {
+        "mes": "Março",
+        "ndvi": 0.83,
+        "agua_km2": 8100,
+        "alerts": 18
+      },
+      {
+        "mes": "Abril",
+        "ndvi": 0.82,
+        "agua_km2": 7900,
+        "alerts": 22
+      },
+      {
+        "mes": "Maio",
+        "ndvi": 0.81,
+        "agua_km2": 7800,
+        "alerts": 25
+      },
+      {
+        "mes": "Junho",
+        "ndvi": 0.8,
+        "agua_km2": 7600,
+        "alerts": 28
+      }
+    ],
+    "Configuração da Análise": {
+      "resolucao_espacial_m": 10,
+      "imagens_processadas": 248,
+      "cobertura_nuvens_max": 15,
+      "sensor": "Sentinel-1 C-Band SAR",
+      "periodo_dias": 300,
+      "area_total_km2": 55000
+    }
+  },
+  "imagens": {
+    "ndvi_analysis.png": "/uploaded_data/ndvi_analysis.png"
+  },
+  "status": "updated"
+}
