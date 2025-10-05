@@ -280,7 +280,7 @@ async def root():
             <div class="card">
                 <h3 style="color: #00FF88;">🚀 Para Desenvolvedores</h3>
                 <p>Envie seus dados de análise SAR do Google Colab para:</p>
-                <code>POST https://turatteam.replit.app/api/update-data</code>
+                <code>POST https://148.230.79.127:8090/api/update-data</code>
             </div>
         </div>
         
